@@ -607,15 +607,15 @@ c) `(n & 1) == 0` no funciona con números negativos en ningún compilador C est
 d) No hay ninguna diferencia; el compilador genera exactamente el mismo código para ambas
 
 ```
-RESPUESTA_P4=
+RESPUESTA_P4=b
 ```
 =======
 **P2** — Describí con tus palabras qué diferencia hay entre las dos implementaciones de `esPar` que conflictuaban. ¿En qué caso podría importar elegir una sobre la otra?
 
-> R:
+> R: una divide el numero y se fija si el resto es 0. La otra se fije si el ultimo bit es 0, siendo mas efectiva ya que consume menos recursos. 
 
 ```
-PARTE_IV_COMPLETA=
+PARTE_IV_COMPLETA=SI
 ```
 _(escribí SI cuando el conflicto esté resuelto y pusheado)_
 >>>>>>> origin/feature/conflicto-demo
@@ -636,7 +636,7 @@ c) Si hay que revertir un cambio puntual es imposible sin deshacer todo lo del d
 d) Git rechaza commits que modifiquen demasiados archivos al mismo tiempo
 
 ```
-RESPUESTA_P5=
+RESPUESTA_P5=c
 ```
 
 ---
@@ -652,7 +652,7 @@ c) `git fetch` solo descarga la branch actual; `git pull` descarga todas las bra
 d) `git pull` siempre pide confirmación antes de modificar archivos locales; `git fetch` no
 
 ```
-RESPUESTA_P6=
+RESPUESTA_P6=b
 ```
 
 ---
@@ -668,20 +668,20 @@ c) Qué problema resuelve o qué funcionalidad agrega, cómo se verificó que fu
 d) El tiempo que tardó en implementarse y el nombre del autor
 
 ```
-RESPUESTA_P7=
+RESPUESTA_P7=c
 ```
 =======
 **P3** — Un compañero te dice: "yo hago un solo commit al final del día con todo lo que hice". ¿Qué problemas puede traer esa práctica? ¿Qué le dirías?
 
-> R:
+> R: Es mejor hacer varios commits, cada uno con las diferencias puntuales para que a la hora de debuggear sea mas sencillo
 
 **P4** — ¿Cuál es la diferencia entre `git fetch` y `git pull`? ¿Cuándo preferirías usar uno sobre el otro?
 
-> R:
+> R: git fetch descarga los cambios en la nube sin modificar los archivos locales, mientras que git pull los descarga y los integra inmediatamente en tu código es decir, hace un fetch seguido de un merge.
 
 **P5** — ¿Qué información debería tener la descripción de un Pull Request para que sea útil para quien lo revisa?
 
-> R:
+> R: deberia detallar que se hizo y como se hizo para que quien lo revise sepa bien que revisar
 >>>>>>> origin/feature/conflicto-demo
 
 ---
